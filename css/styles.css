@@ -513,15 +513,17 @@ img{
      margin-right: 30px;
  }
  .customers-link{
-     width: 100%;
-     height: 100%;
-     justify-content: center;
-     display: flex;
-     align-items: center;
-        border: 1px solid #AFB1B8;
+    display: flex;
+        width: 170px;
+        height: 92px;
+        justify-content: center;
+        align-items: center;
+        color: rgba(175, 177, 184, 1);
+        border: 1px solid  rgba(175, 177, 184, 1);
         border-radius: 4px;
-         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .customers-link:hover .customers-svg,
@@ -692,7 +694,31 @@ display: block;
 .examples-title {
     margin-bottom: 4px;
 }
-
+.examples-thumb{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.thumb-text{
+    position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 63px 24px;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color:rgba(255, 255, 255, 1);
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.examples-thumb:hover .thumb-text,
+.examples-thumb:focus .thumb-text {
+    transform: translateY(0);
+}
 /* #endregion examples */
 /* #region features */
 
