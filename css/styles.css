@@ -343,6 +343,7 @@ margin-right: 10px;
 
  .section-item{
      margin-right: 30px;
+     max-width: 270px;
  }   
  .section-item:last-child{
      margin-right: 0;
